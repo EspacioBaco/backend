@@ -6,12 +6,12 @@ const initAdminUser = async () => {
       const adminExists = await Usuario.findOne({ where: { tipo: 'admin', correo: 'espaciobacoadmin@gmail.com'} });
   
       if (!adminExists) {
-        const hashedPassword = await bcrypt.hash('Admin1234', 10);
+        const hashedPassword = await bcrypt.hash('EspacioBaco3540', 10);
         await Usuario.create({
           tipo: 'admin',
           nombre: 'Admin',
           apellido: 'User',
-          correo: 'espaciobacoadmin@gmail.com',
+          correo: 'espaciobaco75@gmail.com',
           contrasenia: hashedPassword,
           telefono: 'xxxxxxxxxx',
           direccion: 'xxxxxxxxxx'
