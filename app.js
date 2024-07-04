@@ -27,7 +27,7 @@ app.use(express.json());
 // Middleware para habilitar la comunicación entre servidores (CORS)
 app.use(
   cors({
-    origin: ["https://espaciobaco.vercel.app"],
+    origin: ["https://espacio-baco.vercel.app"],
     credentials: true,
   })
 );
